@@ -5,132 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<div class="container">
+
+  <div class="container">
 
     <div class="row">
+      <div class="col-3">
 
-        <div class="col-3">
+      </div>
+
+      <div class="col-6">
+
+        <h1>Quiz</h1>
+        <div id= "startScreen" class="border border-dark ">
+
+          <h5></h5>
+          <button class="btn btn-primary d-block" id="beginbtn">
+            Begin
+          </button>
+
+        </div>
+        <div id= "Quiz" class="border border-dark hide">
+
+          <h5 class = "border-bottom border-danger" id="question"></h5>
+
+          <button class="btn btn-primary d-block" id="btn1">
+            words
+          </button>
+          <br>
+
+          <button class="btn btn-primary d-block" id="btn2">
+            words
+          </button>
+          <br>
+
+          <button class="btn btn-primary d-block" id="btn3">
+            words
+          </button>
+          <br>
+
+          <button class="btn btn-primary d-block" id="btn4">
+            words
+          </button>
 
         </div>
 
-        <div id="start" class="card col-6 d-active">
-          <h4 class="card-header">Quiz</h4>
-          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, consequuntur. Molestias sequi vitae veritatis corrupti itaque, reiciendis autem exercitationem aliquid? Nostrum veniam, nemo explicabo esse reprehenderit illum expedita magnam assumenda!</p>
-          <div class="card-body">
-            <div class="text-center">
-              <button class="btn btn-primary btn-lg begin">
-                <span></span> Begin </button>
-            </div>
-          </div>
-        </div>
+      </div>
 
-        <div id="question1" class="card col-6 d-none">
-            <h4 class="card-header">Question#1</h4>
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, consequuntur. Molestias sequi vitae veritatis corrupti itaque, reiciendis autem exercitationem aliquid? Nostrum veniam, nemo explicabo esse reprehenderit illum expedita magnam assumenda!</p>
-            <div class="card-body">
-              <div class="text-center">
-                <button class="btn btn-primary btn-lg right">
-                  <span></span> True </button>
-                <button class="btn btn-primary btn-lg wrong">
-                  <span></span> False</button>
-                <button class="btn btn-primary btn-lg wrong">
-                  <span></span> False</button>
-                <button class="btn btn-primary btn-lg wrong">
-                    <span></span> False</button>
-              </div>
-            </div>
-          </div>
+      <div class="col-3">
 
-          <div id="question2" class="card col-6 d-none">
-            <h4 class="card-header">Question#2</h4>
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, consequuntur. Molestias sequi vitae veritatis corrupti itaque, reiciendis autem exercitationem aliquid? Nostrum veniam, nemo explicabo esse reprehenderit illum expedita magnam assumenda!</p>
-            <div class="card-body">
-              <div class="text-center">
-                <button class="btn btn-primary btn-lg right">
-                  <span></span> True </button>
-                <button class="btn btn-primary btn-lg wrong">
-                  <span></span> False</button>
-                <button class="btn btn-primary btn-lg wrong">
-                  <span></span> False</button>
-                <button class="btn btn-primary btn-lg wrong">
-                    <span></span> False</button>
-              </div>
-            </div>
-          </div>
+        <span id="timer"></span>
 
-          <div id="question3" class="card col-6 d-none">
-            <h4 class="card-header">Question#3</h4>
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, consequuntur. Molestias sequi vitae veritatis corrupti itaque, reiciendis autem exercitationem aliquid? Nostrum veniam, nemo explicabo esse reprehenderit illum expedita magnam assumenda!</p>
-            <div class="card-body">
-              <div class="text-center">
-                <button class="btn btn-primary btn-lg right">
-                  <span></span> True </button>
-                <button class="btn btn-primary btn-lg wrong">
-                  <span></span> False</button>
-                <button class="btn btn-primary btn-lg wrong">
-                  <span></span> False</button>
-                <button class="btn btn-primary btn-lg wrong">
-                    <span></span> False</button>
-              </div>
-            </div>
-          </div>
-
-          <div id="question4" class="card col-6 d-none">
-            <h4 class="card-header">Question#4</h4>
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, consequuntur. Molestias sequi vitae veritatis corrupti itaque, reiciendis autem exercitationem aliquid? Nostrum veniam, nemo explicabo esse reprehenderit illum expedita magnam assumenda!</p>
-            <div class="card-body">
-              <div class="text-center">
-                <button class="btn btn-primary btn-lg right">
-                  <span></span> True </button>
-                <button class="btn btn-primary btn-lg wrong">
-                  <span></span> False</button>
-                <button class="btn btn-primary btn-lg wrong">
-                  <span></span> False</button>
-                <button class="btn btn-primary btn-lg wrong">
-                    <span></span> False</button>
-              </div>
-            </div>
-          </div>
-
-          <div id="question5" class="card col-6 d-none">
-            <h4 class="card-header">Question#4</h4>
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, consequuntur. Molestias sequi vitae veritatis corrupti itaque, reiciendis autem exercitationem aliquid? Nostrum veniam, nemo explicabo esse reprehenderit illum expedita magnam assumenda!</p>
-            <div class="card-body">
-              <div class="text-center">
-                <button class="btn btn-primary btn-lg right">
-                  <span></span> True </button>
-                <button class="btn btn-primary btn-lg wrong">
-                  <span></span> False</button>
-                <button class="btn btn-primary btn-lg wrong">
-                  <span></span> False</button>
-                <button class="btn btn-primary btn-lg wrong">
-                    <span></span> False</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-3">
-              <p class="float-right timer"> for the timer</p>
-          </div>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      </div>
 
     </div>
 
-</div>
+  </div>
 
-
-
-
-
-
-
-
-
+      
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
